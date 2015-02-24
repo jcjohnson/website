@@ -1,0 +1,1 @@
+rsync -r --exclude ".git" . jcjohns@robo.stanford.edu:~/www
