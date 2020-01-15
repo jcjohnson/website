@@ -8,7 +8,7 @@
     <style>
       body {
         font-family: 'sans-serif';
-        font-size: 16px;
+        font-size: 12pt;
         background-color: #FFFCF4;
         color: #4F6071;
       }
@@ -19,8 +19,6 @@
         width: 100%;
         height: 360px;
         background-color: #F0EAD6
-        /* background-color: #b30000; */
-        /* background-color: #CCC; */
       }
       #header-inner {
         position: absolute;
@@ -66,10 +64,13 @@
         width: 150px;
       }
       .paper-title {
+        font-size: 14pt;
         font-weight: bold;
       }
       .paper-authors {
-        font-style: italic;
+      }
+      .paper-authors a {
+        color: #4F6071;
       }
       .paper-link {
       }
@@ -92,11 +93,12 @@
             Justin Johnson
           </div>
           <div class='header-text-email'>
-            jcjohns at cs dot stanford dot edu
+            justincj at umich dot edu
           </div>
           <div>
             <a href="https://github.com/jcjohnson">[GitHub]</a>
             <a href="https://scholar.google.com/citations?user=mS5k4CYAAAAJ&hl=en">[Google Scholar]</a>
+            <a href="https://twitter.com/jcjohnss">[Twitter]</a>
           </div>
         </div>
       </div>
@@ -107,39 +109,171 @@
         <div class='row'>
           <h1>About</h1>
           <div class='vspace'>
+            I am an Assistant Professor at the University of Michigan
+            and a Visiting Scientist at Facebook AI Research.
+          </div>
+          <div class='vspace'>
             I'm broadly interested in computer vision and machine learning.
-            My research involves visual reasoning, vision and language, and image generation
-            using deep neural networks.
+            My research involves visual reasoning, vision and language, image generation,
+            and 3D reasoning using deep neural networks.
           </div>
           <div class='vspace'>
-            I am currently a Research Scientist at Facebook AI Research.
-          </div>
-          <div class='vspace'>
-            I completed my PhD at Stanford University, advised by
+            I received my PhD at Stanford University, advised by
             <a href="http://vision.stanford.edu/feifeili/" target='_blank'>Fei-Fei Li</a>.
-            At Stanford I co-taught
-            <a href="http://cs231n.stanford.edu", target='_blank'>
-              CS 231N: Convolutional Neural Networks for Visual Recognition
-            </a>
-            with
-            <a href="http://vision.stanford.edu/feifeili/" target='_blank'>Fei-Fei Li</a>,
-            <a href='https://cs.stanford.edu/people/karpathy/' target='_blank'>Andrej Karpathy</a>
-            (in <a href='http://cs231n.stanford.edu/2016' target='_blank'>2016</a>),
-            and <a href='http://ai.stanford.edu/~syyeung/' target='_blank'>Serena Yeung</a>
-            (in <a href='http://cs231n.stanford.edu/2017' target='_blank'>2017</a>
-            and <a href='http://cs231n.stanford.edu/2018' target='_blank'>2018</a>).
-          </div>
-          <div class='vspace'>
-            Starting Fall 2019 I will join
-            <a href='http://www.eecs.umich.edu/cse/' target='_blank'>
-              University of Michigan Computer Science and Engineering
-            </a>
-            as an Assistant Professor. I am looking for strong students to join my research
-            group, so please get in touch if you would like to work with me.
           </div>
         </div>
+
+        <div class='row'>
+          <h1>Students</h1>
+          PhD Students
+          <ul>
+            <li><a href='https://kdexd.github.io/'>Karan Desai</a></li>
+            <li>
+              <a href='http://www.cs.cmu.edu/~nileshk/index.html'>Nilesh Kulkarni</a>
+              (Co-advised with <a href='https://web.eecs.umich.edu/~fouhey/'>David Fouhey</a>)
+            </li>
+          </ul>
+        </div>
+
+        <div class='row'>
+          <h1>Teaching</h1>
+          <h3>University of Michigan</h3>
+          EECS 498/598: Deep Learning for Computer Vision
+          <a href='https://web.eecs.umich.edu/~justincj/teaching/eecs498/'>(Fall 2019)</a>
+          <br>
+          EECS 442: Computer Vision
+          <a href='https://web.eecs.umich.edu/~justincj/teaching/eecs442/'>(Winter 2020)</a>
+          <h3>Stanford University</h3>
+            CS 231N: Convolutional Neural Networks for Visual Recognition
+            <ul>
+              <li>
+                <a href='http://cs231n.stanford.edu/2019/'>Spring 2019</a>,
+                <a href='http://cs231n.stanford.edu/2018/'>Spring 2018</a>,
+                <a href='http://cs231n.stanford.edu/2017/'>Spring 2017</a>
+                with <a href='http://ai.stanford.edu/~syyeung/'>Serena Yeung</a>
+                and <a href='https://profiles.stanford.edu/fei-fei-li/'>Fei-Fei Li</a>
+              </li>
+              <li>
+                <a href='http://cs231n.stanford.edu/2016/'>Winter 2016</a>
+                with <a href='https://cs.stanford.edu/people/karpathy/'>Andrej Karpathy</a>
+                and <a href='https://profiles.stanford.edu/fei-fei-li/'>Fei-Fei Li</a>
+              </li>
+            </ul>
+          </h2>
+        </div>
+
         <div class='row'>
           <h1>Publications</h1>
+
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='images/synsin.gif'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                SynSin: End-to-end View Synthesis from a Single Image
+              </div>
+              <div class='paper-authors'>
+                <a href='http://www.robots.ox.ac.uk/~ow/'>Olivia Wiles</a>,
+                <a href='https://gkioxari.github.io/'>Georgia Gkioxari</a>,
+                <a href='http://szeliski.org/RichardSzeliski.htm'>Richard Szeliski</a>,
+                <u>Justin Johnson</u>
+              </div>
+              <div>arXiv 2019</div>
+              <div>
+                <a href='https://arxiv.org/abs/1912.08804'>[arXiv]</a>
+                <a href='http://www.robots.ox.ac.uk/~ow/synsin.html'>[project]</a>
+              </div>
+            </div>
+          </div>
+
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='images/daqa.png'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                Temporal Reasoning via Audio Question Answering
+              </div>
+              <div class='paper-authors'>
+                <a href='https://haythamfayek.com/'>Haytham Fayek</a>,
+                <u>Justin Johnson</u>
+              </div>
+              <div>arXiv 2019</div>
+              <div>
+                <a href='https://arxiv.org/abs/1911.09655'>[arXiv]</a>
+                <a href='https://github.com/facebookresearch/daqa'>[code]</a>
+              </div>
+            </div>
+          </div>
+
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='images/phyre.png'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                PHYRE: A New Benchmark for Physical Reasoning
+              </div>
+              <div class='paper-authors'>
+                <a href='https://github.com/akhti'>Anton Bakhtin</a>,
+                <a href='https://lvdmaaten.github.io/'>Laurens van der Maaten</a>,
+                <u>Justin Johnson</u>,
+                <a href='https://www.linkedin.com/in/laura-gustafson-b1b165b0'>Laura Gustafson</a>,
+                <a href='https://www.rossgirshick.info/'>Ross Girshick</a>
+              </div>
+              <div>NeurIPS 2019</div>
+              <div>
+                <a href='https://arxiv.org/abs/1908.05656'>[arXiv]</a>
+                <a href='https://phyre.ai/'>[project]</a>
+                <a href='https://github.com/facebookresearch/phyre'>[code]</a>
+              </div>
+            </div>
+          </div>
+
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='images/meshrcnn.gif'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                Mesh R-CNN
+              </div>
+              <div class='paper-authors'>
+                <a href='https://gkioxari.github.io/'>Georgia Gkioxari</a>,
+                <a href='https://people.eecs.berkeley.edu/~malik/'>Jitendra Malik</a>,
+                <u>Justin Johnson</u>
+              </div>
+              <div>ICCV 2019</div>
+              <div>
+                <a href='https://arxiv.org/abs/1906.02739'>[arXiv]</a>
+                <a href='https://gkioxari.github.io/meshrcnn/'>[project]</a>
+              </div>
+            </div>
+          </div>
+
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='images/nms.png'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                On Network Design Spaces for Visual Recognition
+              </div>
+              <div class='paper-authors'>
+                <a href='https://scholar.google.com/citations?user=UKpinl8AAAAJ'>Ilija Radosavovic</a>,
+                <u>Justin Johnson</u>,
+                <a href='http://vcl.ucsd.edu/~sxie/'>Saining Xie</a>,
+                <a href='https://www.linkedin.com/in/wanyenlo'>Wan-Yen Lo</a>,
+                <a href='https://pdollar.github.io/'>Piotr Doll&aacute;r</a>
+              </div>
+              <div>ICCV 2019</div>
+              <div>
+                <a href='https://arxiv.org/abs/1905.13214'>[arXiv]</a>
+                <a href='https://github.com/facebookresearch/nds'>[code]</a>
+              </div>
+            </div>
+          </div>
 
           <div class='row vspace-top'>
             <div class='col-xs-3 text-center'>
@@ -150,13 +284,14 @@
                 HiDDeN: Hiding Data With Deep Networks
               </div>
               <div class='paper-authors'>
-                Jiren Zhu*, Russell Kaplan*, <u>Justin Johnson</u>, Li Fei-Fei
+                <a href='https://www.linkedin.com/in/jirenz'>Jiren Zhu*</a>,
+                <a href='https://www.linkedin.com/in/russelljkaplan'>Russell Kaplan*</a>,
+                <u>Justin Johnson</u>,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>
                 <br>
                 [* indicates equal contribution]
               </div>
-              <div>
-                ECCV 2018
-              </div>
+              <div>ECCV 2018</div>
               <div>
                 <a href="https://arxiv.org/abs/1807.09937">[arXiv]</a>
               </div>
@@ -172,7 +307,9 @@
                 Image Generation from Scene Graphs
               </div>
               <div class='paper-authors'>
-                <u>Justin Johnson</u>, Agrim Gupta, Li Fei-Fei
+                <u>Justin Johnson</u>,
+                <a href='http://web.stanford.edu/~agrim/'>Agrim Gupta</a>,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>
               </div>
               <div>
                 CVPR 2018
@@ -192,7 +329,11 @@
                 Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks
               </div>
               <div class='paper-authors'>
-                Agrim Gupta, <u>Justin Johnson</u>, Li Fei-Fei, Silvio Savarese, Alexandre Alahi
+                <a href='http://web.stanford.edu/~agrim/'>Agrim Gupta</a>,
+                <u>Justin Johnson</u>,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>,
+                <a href='http://cvgl.stanford.edu/silvio/'>Silvio Savarese</a>,
+                <a href='https://people.epfl.ch/alexandre.alahi?lang=en'>Alexandre Alahi</a>
               </div>
               <div>
                 CVPR 2018
@@ -213,12 +354,16 @@
                 Inferring and Executing Programs for Visual Reasoning
               </div>
               <div class='paper-authors'>
-                <u>Justin Johnson</u>, Bharath Hariharan, Laurens van der Maaten, <br>
-                Judy Hoffman, Li Fei-Fei, C. Lawrence Zitnick, Ross Girshick
+                <u>Justin Johnson</u>,
+                <a href='http://home.bharathh.info/'>Bharath Hariharan</a>,
+                <a href='https://lvdmaaten.github.io/'>Laurens van der Maaten</a>,
+                <br>
+                <a href='https://www.cc.gatech.edu/~judy/'>Judy Hoffman</a>,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>,
+                <a href='http://larryzitnick.org/'>C. Lawrence Zitnick</a>,
+                <a href='https://www.rossgirshick.info/'>Ross Girshick</a>
               </div>
-              <div>
-                ICCV 2017 (Oral)
-              </div>
+              <div>ICCV 2017 (Oral)</div>
               <div>
                 <a href='iep'>[project]</a>
                 <a href='https://github.com/facebookresearch/clevr-iep'>[code]</a>
@@ -237,11 +382,12 @@
                 Characterizing and Improving Stability in Neural Style Transfer
               </div>
               <div class='paper-authors'>
-                Agrim Gupta, <u>Justin Johnson</u>, Alexandre Alahi, Li Fei-Fei
+                <a href='http://web.stanford.edu/~agrim/'>Agrim Gupta</a>,
+                <u>Justin Johnson</u>,
+                <a href='https://people.epfl.ch/alexandre.alahi?lang=en'>Alexandre Alahi</a>,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>
               </div>
-              <div>
-                ICCV 2017
-              </div>
+              <div>ICCV 2017</div>
               <div>
                 <a href='https://arxiv.org/abs/1705.02092'>[arXiv]</a>
               </div>
@@ -257,12 +403,15 @@
                 CLEVR: A Diagnostic Dataset for <br> Compositional Language and Elementary Visual Reasoning
               </div>
               <div class='paper-authors'>
-                <u>Justin Johnson</u>, Bharath Hariharan, Laurens van der Maaten, <br>
-                Li Fei-Fei, C. Lawrence Zitnick, Ross Girshick
+                <u>Justin Johnson</u>,
+                <a href='http://home.bharathh.info/'>Bharath Hariharan</a>,
+                <a href='https://lvdmaaten.github.io/'>Laurens van der Maaten</a>,
+                <br>
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>,
+                <a href='http://larryzitnick.org/'>C. Lawrence Zitnick</a>,
+                <a href='https://www.rossgirshick.info/'>Ross Girshick</a>
               </div>
-              <div>
-                CVPR 2017
-              </div>
+              <div>CVPR 2017</div>
               <div>
                 <a href='clevr'>[project]</a>
                 <a href='https://github.com/facebookresearch/clevr-dataset-gen'>[code]</a>
@@ -280,40 +429,17 @@
                 A Hierarchical Approach for Generating Descriptive Image Paragraphs                
               </div>
               <div class='paper-authors'>
-                Jonathan Krause, <u>Justin Johnson</u>, Ranjay Krishna, Li Fei-Fei
+                <a href='http://ai.stanford.edu/~jkrause/'>Jonathan Krause</a>,
+                <u>Justin Johnson</u>,
+                <a href='https://ranjaykrishna.com/index.html'>Ranjay Krishna</a>,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>
               </div>
-              <div>
-                CVPR 2017 (Spotlight)
-              </div>
+              <div>CVPR 2017 (Spotlight)</div>
               <div>
                 <a href='http://cs.stanford.edu/people/ranjaykrishna/im2p/index.html'>[project]</a>
                 <a href='https://arxiv.org/abs/1611.06607'>[arXiv]</a>
                 <a href='http://visualgenome.org/static/data/dataset/paragraphs_v1.json.zip'>[dataset]</a>
                 <a href='https://www.youtube.com/watch?v=G_hWOGH0a0w'>[video]</a>
-              </div>
-            </div>
-          </div>
-
-          <div class='row vspace-top'>
-            <div class='col-xs-3 text-center'>
-              <img class='paper-image' src='papers/eccv16/31_muse_mine.png'>
-            </div>
-            <div class='col-xs-9'>
-              <div class='paper-title'>
-                Perceptual Losses for Real-Time Style Transfer and Super-Resolution
-              </div>
-              <div class='paper-authors'>
-                <u>Justin Johnson</u>, Alexandre Alahi, Li Fei-Fei
-              </div>
-              <div>
-                ECCV 2016
-              </div>
-              <div>
-                <a href='eccv16'>[project]</a>
-                <a href='https://github.com/jcjohnson/fast-neural-style'>[code]</a>
-                <a href='papers/eccv16/JohnsonECCV16.pdf'>[pdf]</a>
-                <a href='http://arxiv.org/abs/1603.08155'>[arXiv]</a>
-                <a href='papers/eccv16/JohnsonECCV16Supplementary.pdf'>[supplementary]</a>
               </div>
             </div>
           </div>
@@ -328,17 +454,50 @@
                 using Crowdsourced Dense Image Annotations
               </div>
               <div class='paper-authors'>
-                Ranjay Krishna, Yuke Zhu, Oliver Groth, <u>Justin Johnson</u>, <br>
-                Kenji Hata, Joshua Kravitz, Stephanie Chen, Yannis Kalantidis, <br>
-                Li-Jia Li, David A. Shamma, Michael S. Bernstein, Li Fei-Fei
+                <a href='https://ranjaykrishna.com/index.html'>Ranjay Krishna</a>,
+                <a href='https://ai.stanford.edu/~yukez/'>Yuke Zhu</a>,
+                <a href='https://ori.ox.ac.uk/ori-people/oliver-groth/'>Oliver Groth</a>,
+                <u>Justin Johnson</u>,
+                <br>
+                <a href='https://scholar.google.com/citations?user=Fu9I2SwAAAAJ&hl=en'>Kenji Hata</a>,
+                <a href='https://www.linkedin.com/in/jlkravitz'>Joshua Kravitz</a>,
+                Stephanie Chen,
+                <a href='https://www.skamalas.com/'>Yannis Kalantidis</a>,
+                <br>
+                <a href='http://vision.stanford.edu/lijiali/'>Li-Jia Li</a>,
+                <a href='https://scholar.google.com/citations?user=ge8g4uoAAAAJ&hl=en'>David A. Shamma</a>,
+                <a href='https://hci.stanford.edu/msb/'>Michael Bernstein</a>,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>
               </div>
-              <div>
-                IJCV 2016
-              </div>
+              <div>IJCV 2017</div>
               <div>
                 <a href='http://visualgenome.org'>[project]</a>
                 <a href='http://visualgenome.org/static/paper/Visual_Genome.pdf'>[pdf]</a>
                 <a href='http://arxiv.org/abs/1602.07332'>[arXiv]</a>
+              </div>
+            </div>
+          </div>
+
+          <div class='row vspace-top'>
+            <div class='col-xs-3 text-center'>
+              <img class='paper-image' src='papers/eccv16/31_muse_mine.png'>
+            </div>
+            <div class='col-xs-9'>
+              <div class='paper-title'>
+                Perceptual Losses for Real-Time Style Transfer and Super-Resolution
+              </div>
+              <div class='paper-authors'>
+                <u>Justin Johnson</u>,
+                <a href='https://people.epfl.ch/alexandre.alahi?lang=en'>Alexandre Alahi</a>,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>
+              </div>
+              <div>ECCV 2016</div>
+              <div>
+                <a href='eccv16'>[project]</a>
+                <a href='https://github.com/jcjohnson/fast-neural-style'>[code]</a>
+                <a href='papers/eccv16/JohnsonECCV16.pdf'>[pdf]</a>
+                <a href='http://arxiv.org/abs/1603.08155'>[arXiv]</a>
+                <a href='papers/eccv16/JohnsonECCV16Supplementary.pdf'>[supplementary]</a>
               </div>
             </div>
           </div>
@@ -352,13 +511,13 @@
                 DenseCap: Fully Convolutional Localization Networks for Dense Captioning
               </div>
               <div class='paper-authors'>
-                <u>Justin Johnson*</u>, Andrej Karpathy*, Li Fei-Fei
+                <u>Justin Johnson</u>*,
+                <a href='https://cs.stanford.edu/people/karpathy/'>Andrej Karpathy*</a>,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>
               <br>
                 [* indicates equal contribution]
               </div>
-              <div>
-                CVPR 2016 (Oral)
-              </div>
+              <div>CVPR 2016 (Oral)</div>
               <div>
                 <a href='http://cs.stanford.edu/people/karpathy/densecap/'>[project]</a>
                 <a href='https://github.com/jcjohnson/densecap'>[code]</a>
@@ -380,13 +539,13 @@
                 Visualizing and Understanding Recurrent Networks
               </div>
               <div class='paper-authors'>
-                Andrej Karpathy*, <u>Justin Johnson*</u>, Li Fei-Fei
+                <a href='https://cs.stanford.edu/people/karpathy/'>Andrej Karpathy*</a>,
+                <u>Justin Johnson</u>*,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>
                 <br>
                 [* indicates equal contribution]
               </div>
-              <div>
-                ICLR Workshop 2016
-              </div>
+              <div>ICLR Workshop 2016</div>
               <div>
                 <a href='papers/understanding-rnns/KarpathyICLR2016.pdf'>[pdf]</a>
                 <a href='http://arxiv.org/abs/1506.02078'>[arXiv]</a>
@@ -403,13 +562,13 @@
                 Love Thy Neighbors: Image Annotation by Exploiting Image Metadata
               </div>
               <div class='paper-authors'>
-                <u>Justin Johnson*</u>, Lamberto Ballan*, Li Fei-Fei
+                <u>Justin Johnson</u>*,
+                <a href='http://www.lambertoballan.net/'>Lamberto Ballan*</a>,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>
                 <br>
                 [* indicates equal contribution]
               </div>
-              <div>
-                ICCV 2015
-              </div>
+              <div>ICCV 2015</div>
               <div>
                 <a href='papers/iccv15/JohnsonICCV2015.pdf'>[pdf]</a>
                 <a href="papers/iccv15/JohnsonICCV2015.bib">[bib]</a>
@@ -427,8 +586,14 @@
                 Image Retrieval using Scene Graphs
               </div>
               <div class='paper-authors'>
-                <u>Justin Johnson</u>, Ranjay Krishna, Michael Stark, Li-Jia Li, David Ayman Shamma, Michael Bernstein,
-                Li Fei-Fei
+                <u>Justin Johnson</u>,
+                <a href='https://ranjaykrishna.com/index.html'>Ranjay Krishna</a>,
+                <a href='https://scholar.google.com/citations?user=cCda-zQAAAAJ&hl=en'>Michael Stark</a>,
+                <a href='http://vision.stanford.edu/lijiali/'>Li-Jia Li</a>,
+                <a href='https://scholar.google.com/citations?user=ge8g4uoAAAAJ&hl=en'>David A. Shamma</a>,
+                <br>
+                <a href='https://hci.stanford.edu/msb/'>Michael Bernstein</a>,
+                <a href='http://vision.stanford.edu/feifeili/'>Li Fei-Fei</a>
               </div>
               <div>
                 CVPR 2015
@@ -442,6 +607,7 @@
             </div>
           </div>
         </div>
+
         <div class='row vspace-top'>
           <h1>Side Projects</h1>
           <a href='https://github.com/jcjohnson/neural-style' target='_blank'>
